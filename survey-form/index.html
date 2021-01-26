@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <div class="header">
+        <h1 id="title">Military 1st Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the shopping experience</p>
+    </div>
+
+    <div class="container">
+      <form action="" id="survey-form">
+        
+        <div id="name-container">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </div>
+
+        <div id="email-container">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="text" id="name" placeholder="Enter your email address" required />
+        </div>
+
+        <div id="age-container">
+          <label id="number-label" for="number">Age</label>
+          <input id="number" type="number" min="15" max="80" placeholder="Enter your age" />
+        </div>
+
+        <div id="dropdown-container">
+          <label for="dropdown" id="dropdown-name"> Where did you hear about us from? </label>
+          <select id="dropdown" name="dropdown">
+            <option value="google">Google</option>
+            <option value="social-media">Social Media</option>
+            <option value="ad-facebook">Ad on Facebook</option>
+            <option value="post-social-media">Post from a fiend on social media</option>
+            <option value="word-of-mouth">Word of mouth</option>
+          </select>
+        </div>
+
+        <div id="occupation-container">
+              <label id="occupation-label" for="occupation">What do you do? (You can choose more than 1)</label>
+              <input id="occupation" type="checkbox" value="student">Student</input>
+              <input id="occupation" type="checkbox" value="freelancer">Freelancer</input>
+              <input id="occupation" type="checkbox" value="job-holder">Job Holder</input>
+              <input id="occupation" type="checkbox" value="other">Other </input>
+         </div>
+
+         <div id="additional-comments-container">
+             <label for="comment" id="comment-label">Additional Comments</label>
+             <textarea placeholder="Enter your comments here"></textarea>
+         </div>
+
+         <div id="button">
+             <button type="submit" id="submit" class="submit-button">
+                 Submit
+             </button>
+         </div>
+         </div>
+        </div>
+      </form>
+    </div>
+    <footer>Made by HerrSchade</footer>
+  </body>
+</html>
