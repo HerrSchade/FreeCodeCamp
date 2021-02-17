@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0 auto;
+	background-color: #7b9bfa;
+	color: white;
+	width: 80%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 300px;
+	margin-top: 30px;
+}
+
+nav {
+	display: flex;
+	margin-top: 10px;
+}
+
+.menu {
+	margin-top: 10px;
+}
+
+nav a {
+	margin: 0 80px;
+	text-decoration: none;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Hero conent */
+
+main {
+	display: flex;
+	justify-content: space-between;
+}
+.hero {
+	margin: 0 0 600px 50px;
+}
+
+.hero .text h1 {
+	font-size: 80px;
+	max-width: 500px;
+	line-height: 1.2em;
+	margin-bottom: 40px;
+}
+
+.discover {
+	color: rgba(255, 255, 255, 0.76);
+}
+
+.hero .text h2 {
+	font-size: 20px;
+	margin-bottom: 70px;
+}
+
+.buttons .join {
+	padding: 20px 30px;
+	border-radius: 50px;
+	border: none;
+	background: none;
+	background-color: white;
+	box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.1);
+	margin-right: 50px;
+	font-weight: bold;
+	color: black;
+}
+
+.buttons .explore {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 17px;
+	color: white;
+}
+
+.hero-image {
+	position: relative;
+	bottom: 150px;
+}
