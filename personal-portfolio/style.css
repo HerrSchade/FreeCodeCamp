@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/*Custom variables and properties*/
+:root {
+}
+
+/* Base reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* box-sizing and font sizing */
+html {
+	box-sizing: border-box;
+	/* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+/* A few media query to set some font sizes at different screen sizes.
+ * This helps automate a bit of responsiveness.
+ * The trick is to use the rem unit for size values, margin and padding.
+ * Because rem is relative to the document font size
+ * when we scale up or down the font size on the document
+ * it will affect all properties using rem units for the values.
+*/
+
+/* I am using the em unit for breakpoints
+ * The calculation is the following
+ * screen size divided by browser base font size
+ * As an example: a breakpoint at 980px
+ * 980px / 16px = 61.25em
+*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+	html {
+		font-size: 60%;
+	}
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+	html {
+		font-size: 58%;
+	}
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+	html {
+		font-size: 55%;
+	}
+}
+
+/* Base styles */
+
+body {
+	background-color: black;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.8rem; /* 18px */
+	font-weight: 400px;
+	line-height: 1.4;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+}
+
+.navbar a {
+	padding: 1em 2em;
+	transition: 0.2s;
+}
+
+.navbar a:hover {
+	color: rgba(255, 255, 255, 0.356);
+}
+
+.welcome-section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 3.2rem;
+}
+
+.manc {
+	color: rgba(255, 115, 0, 0.596);
+}
+
+.projects {
+	background-color: rgb(34, 34, 34);
+	padding: 3rem 2rem 0 2rem;
+}
+
+.projects h2 {
+	margin-top: 4rem;
+	text-align: center;
+	font-size: 4rem;
+}
+
+.projects-layout {
+	margin-top: 7rem;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+img {
+	max-width: 300px;
+}
+
+button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	background-color: rgb(255, 255, 255);
+	font-size: 1.4rem;
+}
